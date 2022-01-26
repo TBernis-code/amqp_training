@@ -15,6 +15,7 @@ public class ChatMessageRepository {
 
     public List<String> getLastTenMessages(){
         try {
+            //récupère la 90 à 100 si la taille de la liste est 10
             return list.subList(list.size() - 10, list.size());
         } catch (IndexOutOfBoundsException ex) {
             return list;

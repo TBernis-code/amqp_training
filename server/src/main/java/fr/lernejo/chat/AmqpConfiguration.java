@@ -18,7 +18,7 @@ public class AmqpConfiguration {
     }
 
     @Bean
-    MessageListenerAdapter listenerAdapter(ChatMessageListener chatMessageListener) {
+    MessageListenerAdapter listenerAdapter(fr.lernejo.chat.ChatMessageListener chatMessageListener) {
         return new MessageListenerAdapter(chatMessageListener, "onMessage");
     }
 
